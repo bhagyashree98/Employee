@@ -23,3 +23,12 @@ dailywage=$(($wage * $hour))
 echo "Daily Employee Wage is $dailywage"
 }
 dailywage
+
+#Employee part time wage
+parttime=0
+parttimewage(){
+Time=$(($hour / 2))
+parttime=$(($Time * $wage))
+echo "Part time Employee Wage is $parttime"
+}
+parttimewage
