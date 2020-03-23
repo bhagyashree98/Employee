@@ -77,3 +77,18 @@ else
 	echo $monthwage
 fi
 
+#Get the Working hours
+echo "Monthly Wage hours $h"
+echo "Part time wage hours $(($h / 2))"
+
+#Store daily wage along with monthly wage
+for ((i=1; i<=20; i++))
+do
+	arr[$i,0]=$dailywage
+	arr[$i,1]=$monthwage
+done
+
+for ((i=1; i<=20; i++))
+do
+        echo "daily wage ${arr[$i,0]} : monthly wage ${arr[$i,1]}"
+done
